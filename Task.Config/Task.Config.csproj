@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Task.Database\Task.Database.csproj" />
+    <ProjectReference Include="..\Task.Repository.Abstraction\Task.Repository.Abstraction.csproj" />
+    <ProjectReference Include="..\Task.Repository\Task.Repository.csproj" />
+    <ProjectReference Include="..\Task.Services.Abstraction\Task.Services.Abstraction.csproj" />
+    <ProjectReference Include="..\Task.Services\Task.Services.csproj" />
+  </ItemGroup>
+
+</Project>
